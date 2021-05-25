@@ -11,7 +11,7 @@
 }
 .header__menu-hamburger{
     font-size: 30px;
-    width: 90px;
+    width: 70px;
     padding-left: 20px;
     display: none;
 }
@@ -95,6 +95,7 @@
         padding: 8px 10px !important;
         border: 1px solid #646369;
         border-radius: 10px;
+        margin: 0;
         font-size: 14px;
         font-weight: bold;
         color: black;
@@ -106,7 +107,7 @@
 
     .header__menu-hamburger{
         display: flex ;
-        justify-content: center;
+        justify-content: flex-end;
     }
 }
 
