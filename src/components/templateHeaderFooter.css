@@ -6,6 +6,16 @@
     border-bottom: 1px solid #64636949;
 
 }
+.header__menu{
+    display: none;
+}
+.header__menu-hamburger{
+    font-size: 30px;
+    width: 90px;
+    padding-left: 20px;
+    display: none;
+}
+
 .header__logo, .footer__logo{
     width: fit-content;
     padding: 0 25px;
@@ -53,6 +63,56 @@
     display: flex;
 }
 
+.header__menu{
+    width: 100px;
+    height: fit-content;
+}
+
+/*--------------- Media Querys ---------*/
+@media (max-width: 800px) {
+    .header__ad{
+        display: none;
+    }
+    .header__logo{
+        flex: 1;
+        text-align: center;
+    }
+    .header__nav{
+        width: 90px;
+        margin: 0 20px 0 0 ;
+    }
+    .header__nav-generate,
+    .header__nav-explore,
+    .header__nav-more,
+    .header__nav-signup,
+    .more,
+    hr{
+        display: none !important;
+    }
+
+    .header__nav-signin{
+        display: flex;
+        padding: 8px 10px !important;
+        border: 1px solid #646369;
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        color: black;
+    }
+
+    .header__logo{
+        text-align: center;
+    }
+
+    .header__menu-hamburger{
+        display: flex ;
+        justify-content: center;
+    }
+}
+
+
+
+/*-------------------*/
 nav ul{
     display: flex;
     align-items: center;
@@ -103,7 +163,7 @@ a {text-decoration: none; color: #646369;}
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
-.footer > p{flex: 1;}
+.footer > p{flex: 1; text-align: center;}
 .footer__social{
     display: flex;
     width: 200px;
