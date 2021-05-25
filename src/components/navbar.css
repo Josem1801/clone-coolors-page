@@ -1,0 +1,124 @@
+.header{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 11vh;
+    border-bottom: 1px solid #64636949;
+
+}
+.header__logo, .footer__logo{
+    width: fit-content;
+    padding: 0 25px;
+}
+
+.header__logo-img, .footer__logo-img{
+    transform: scale(.9);
+}
+
+.header__ad{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.header__ad:hover .ios{
+    color: #008AFF;
+}
+.header__ad-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 8px;
+    border: 1px solid rgba(0, 4, 255, 0.384);
+}
+.header__ad-text{
+    display: inline;
+    overflow: hidden;
+    height: fit-content;
+    font-size: 14px;
+    min-height: 90%;
+    height: 30px;
+}
+.header__ad-text .ios{
+    font-weight: 600;
+    transition: .2s;
+    color: black;
+}
+.header__ad-text .download{
+    color: blue;
+}
+
+.header__nav{
+    width: 440px;
+    margin: 0 20px;
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.header__nav > li , .header__nav  a{
+    padding: 7px 15px;
+}
+.header__nav a:hover{
+    color: black;
+}
+
+li { list-style: none;}
+
+a {text-decoration: none; color: #646369;}
+
+.header__nav-more{
+    display: flex;
+    align-items: center;
+}
+.header__nav-more > svg{
+    margin-left: 8px;
+}
+.header__nav-signup{
+    background: #005CE6;
+    color: white;
+    opacity: .9;
+    border-radius: 7px;
+    font-weight: 500;
+}
+.header__nav-signup:hover{
+    color: white !important;
+    opacity: 1;
+}
+
+.header__nav hr{ opacity: .5; }
+
+
+
+.footer{
+    background: #F7F7F8;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    color: #646369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.footer > p{flex: 1;}
+.footer__social{
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+.footer__social a > *{
+    font-size: 22px;
+}
+
+@media(max-width: 815px){
+    .footer{
+        height: 170px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .footer > p{flex: none}
+  }

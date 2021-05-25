@@ -1,0 +1,50 @@
+.box{
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+    background:#F7F7F8;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    min-width: 50px;
+}
+
+.box__title{
+    font-size: 22px;
+    font-weight: 800;
+    color: black;
+}
+.box__description{
+    color: #646369;
+    line-height: 25px;
+
+}
+.box__hover{
+    position: absolute;
+    font-size: 28px;
+    font-weight: 900;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .2s ease-out;
+    
+}
+.box__hover > h3{
+    position: absolute;
+    transform: translate(0, 300%);
+    width: 80%;
+    transition: all .2s ease-out;
+}
+.box:hover > .box__hover{
+    opacity: 1;
+}
+.box:hover > .box__hover h3{
+    transform: translate(0 ,0);
+}
+
