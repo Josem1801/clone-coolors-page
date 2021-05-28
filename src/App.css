@@ -7,13 +7,15 @@
 
 .App{
   width: 100%;
-  
+  max-width: 1350px;
+  margin: 0 auto;
 }
 
 /*----------Hero-----------------*/
 .hero{
   padding-left: 60px;
   height: 100vh; 
+  max-height: 750px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,10 +97,11 @@
   border-top-right-radius: 5px;
   border-right: 5px solid black;
   border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
   left: 6.2%;
-  bottom: 5.5%;
-  width: 45.6%;
-  height: 47.2%;
+  bottom: 5.6%;
+  width: 45.4%;
+  height: 47.4%;
   display: flex;
 }
 .hero__right-colors > *{
