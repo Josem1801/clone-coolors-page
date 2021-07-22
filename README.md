@@ -1,5 +1,5 @@
 # Preview
-![Coolors](./src/finallyDesigne/desktop.png)
+![Coolors](./src/finallyDesige/desktop.png)
 
 # Getting Started with Create React App
 
